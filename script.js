@@ -12,33 +12,26 @@ var read5 = document.querySelectorAll('.overlay')[4];
 var button6 = document.querySelector('.buttonn6');
 
 var night = function () {
-
 	section.classList.toggle('dark')
 }
 
-
 var readfirst = function () {
-
 	read1.classList.toggle('read')
 }
 
 var readsecond = function () {
-
 	read2.classList.toggle('read')
 }
 
 var readthird = function () {
-
 	read3.classList.toggle('read')
 }
 
 var readfourth = function () {
-
 	read4.classList.toggle('read')
 }
 
 var readfifth = function () {
-
 	read5.classList.toggle('read')
 }
 
