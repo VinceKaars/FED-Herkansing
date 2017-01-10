@@ -1,0 +1,818 @@
+@font-face {
+	font-family: 'DFDS';
+	src: url('fonts/DFDS-Bold.eot');
+	src: url('fonts/DFDS-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/DFDS-Bold.woff') format('woff'), url('fonts/DFDS-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DFDS';
+	src: url('fonts/DFDS-Light.eot');
+	src: url('fonts/DFDS-Light.eot?#iefix') format('embedded-opentype'), url('fonts/DFDS-Light.woff') format('woff'), url('fonts/DFDS-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition: all 0.01s ease;
+	-moz-transition: all 0.01s ease;
+	-ms-transition: all 0.01s ease;
+	-o-transition: all 0.01s ease;
+}
+
+
+/* Vormgeving */
+
+body {
+	font-family: 'DFDS', sans-serif;
+	background-color: #eaedee;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main {
+	margin: 1em;
+	color: bo;
+	width: 100%;
+}
+
+header {
+	background-color: white;
+	padding: 0;
+	padding-left: 3em;
+	position: relative;
+	color: #102b42;
+	width: 100%;
+}
+
+main + footer {
+	background-color: #102b42;
+	color: white;
+	position: relative;
+	width: 100%;
+	left: 0;
+	height: 20%;
+	text-align: center;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li {
+	display: inline;
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	right: 1em;
+}
+
+.menu li {
+	margin-right: 0.5em;
+}
+
+li:hover {
+	text-decoration: underline;
+}
+
+main +footer a {
+	background-color: #102b42;
+	color: white;
+}
+
+main +footer a:hover {
+	background-color: #102b42;
+	color: white;
+	text-decoration: none;
+}
+
+main a {
+	background-color: #6cb645;
+	color: white;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	-webkit-clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+	margin: 2.em;
+	margin-top: 0;
+}
+
+article a {
+	float: right;
+}
+
+main a:hover {
+	text-decoration: underline;
+}
+
+main footer {
+	font-family: 'DFDS', sans-serif;
+	display: inline;
+}
+
+nav:nth-of-type(2) {
+	position: relative;
+	color: white;
+	padding-left: 0.5em;
+	width: 100%;
+	padding-top: 0.5em;
+	text-align: left;
+	padding-left: 10%;
+	border-bottom: solid 1px white;
+	background-size: cover;
+	background: linear-gradient(rgba(46, 58, 90, 0.85), rgba(46, 58, 90, 0.85)), rgba(46, 58, 90, 0.85) url('http://www.dfdsseaways.nl/PublishingImages/Afbeeldingen/Header1386x500/Bestemmingen_Schotland_Engeland/Isleofsky138x500.jpg?RenditionID=1') no-repeat center;
+	background-size: cover;
+}
+
+legend {
+	font-family: 'DFDS-bold', sans-serif;
+}
+
+
+/* Afbeeldingen */
+
+.afbeelding {
+	background-image: url('images/image1.png');
+	height: 10em;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding-top: 130px;
+	margin-bottom: auto;
+}
+
+.afbeelding2 {
+	background-image: url('images/stairway.jpg');
+	height: 10em;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding-top: 130px;
+	margin-bottom: auto;
+}
+
+.afbeelding3 {
+	background-image: url('images/tower.jpg');
+	height: 10em;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding-top: 130px;
+	margin-bottom: auto;
+}
+
+.afbeelding4 {
+	background-image: url('images/book.jpg');
+	height: 10em;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding-top: 130px;
+	margin-bottom: auto;
+}
+
+.afbeelding5 {
+	background-image: url('images/frans.jpg');
+	height: 10em;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding-top: 130px;
+	margin-bottom: auto;
+}
+
+.afbeelding6 {
+	background-image: url('images/drowning.jpg');
+	height: 10em;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding-top: 130px;
+	margin-bottom: auto;
+}
+
+.overlay {
+	width: 100%;
+	height: 2em;
+	background-color: rgba(108, 182, 69, 0.85);
+	padding-top: 0.3em;
+}
+
+.overlayclick {
+	width: 100%;
+	height: 2em;
+	background-color: rgba(170, 39, 0, 0.7);
+	padding-top: 0.3em;
+	animation: jiggle .3s ease-out;
+}
+
+@keyframes jiggle {
+	15%,
+	40%,
+	75%,
+	100% {
+		transform-origin: center center
+	}
+	15% {
+		transform: scale(1.4, 1.2);
+	}
+	40% {
+		transform: scale(0.9, 0.9);
+	}
+	75% {
+		transform: scale(1.08, 1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+.asidehead {
+	background-image: url('images/uitgelicht.jpg');
+	height: 10em;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding-top: 130px;
+	margin-bottom: auto;
+}
+
+.asidehead .overlay {
+	background-color: rgba(240, 133, 36, 0.85);
+}
+
+select {
+	display: inline;
+}
+
+nav:nth-of-type(2) h3 {
+	display: inline;
+}
+
+header img {
+	position: absolute;
+	left: 1em;
+	top: 2.0em;
+}
+
+h1 {
+	padding-left: 1.5em;
+	padding-top: 0.5em;
+}
+
+.sorteer {
+	padding-left: 0.5em;
+}
+
+body > form {
+	margin: 0 auto;
+	background-color: white;
+	width: 100%;
+	text-align: right;
+	padding-right: 1em;
+}
+
+.filter {
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.titel {
+	background-color: white;
+	border-bottom: solid 1px black 50%;
+	border-radius: 0.3em;
+}
+
+article {
+	background-color: white;
+	color: #102b42;
+	max-width: 29em;
+	margin-top: 0.5em;
+	box-sizing: border-box;
+	border-radius: 0.3em;
+	padding-bottom: 0.5em;
+}
+
+h3 {
+	display: inline;
+}
+
+h4 {
+	display: inline;
+}
+
+aside h4 {
+	display: flex;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	background-color: white;
+}
+
+aside a {
+	background-color: #f08524;
+	align-content: center;
+}
+
+aside {
+	background-color: none;
+	margin-top: 0.5em;
+	min-width: 16em;
+	border-radius: 0.3em;
+	padding-bottom: 0.5em;
+}
+
+article p,
+aside p,
+aside h4 {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: white;
+}
+
+article p:last-child {
+	font-size: 0.8em;
+}
+
+input[type="search" i] {
+	-webkit-appearance: searchfield;
+	width: 25em;
+	margin: 1em;
+}
+
+.header {
+	border-radius: 10px;
+	margin: 0 auto;
+	padding-left: 20px;
+	width: 280px;
+	font-family: 'DFDS-light'
+}
+
+.accordion a {
+	margin: 0em;
+	color: black;
+	font-family: 'DFDS', sans-serif;
+}
+
+.accordion a:hover {
+	color: #333;
+}
+
+.accordion a,
+.accordion li ul {
+	background-color: white;
+}
+
+.accordion a:hover,
+.accordion li ul {
+	background: #f6f9fd;
+}
+
+.boxShaddow {
+	box-shadow: 0 10px 20px -10px black;
+}
+
+.accordion {
+	padding: 0;
+	position: relative;
+	border-top: 1px solid #eaedee
+}
+
+.accordion:before,
+.accordion:after {
+	content: "";
+	display: table;
+}
+
+.accordion:after {
+	clear: both;
+}
+
+.accordion a {
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.accordion ul {
+	margin: 0;
+	padding: 0;
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+.accordion li ul {
+	display: none;
+	left: 0;
+}
+
+.accordion li:hover > ul {
+	box-shadow: 0 10px 20px -10px black;
+	display: block;
+	width: 100%;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+.horizontal {
+	margin: auto;
+	width: 100%;
+	background-color: white
+}
+
+.horizontal li {
+	float: left;
+}
+
+.horizontal li ul {
+	position: absolute;
+	width: 217px;
+	z-index: 2;
+}
+
+header a:first-of-type {
+	color: #102b42;
+}
+
+
+/* Navigatie vormgeving */
+
+button {
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	color: white;
+	font-family: 'DFDS-bold';
+	background-color: #f08524;
+	box-sizing: border-box;
+	border: none;
+	min-height: 2em;
+	min-width: 2em;
+}
+
+button:hover {
+	text-decoration: underline;
+}
+
+footer img {
+	width: 5em;
+}
+
+.visual {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.dark {
+	animation: pulse 5s forwards;
+}
+
+@keyframes pulse {
+	0% {
+		background-color: #eaedee;
+	}
+	100% {
+		background-color: #102b42;
+	}
+}
+
+
+/* Login pagina styling */
+
+.login .account {
+	text-align: center;
+}
+
+.login a {
+	display: block;
+	width: 20em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.login form {
+	text-align: left;
+	display: block;
+	margin-right: 10em;
+	font-family: 'DFDS-bold';
+	background-color: #102b42;
+	margin: 1em;
+	max-width: 20em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5em;
+	border-radius: 0.3em;
+}
+
+.login fieldset {
+	color: white;
+	padding-top: 1em;
+}
+
+.loginmain {
+	background-image: url(images/image1.png);
+	background-size: cover;
+	padding: 1em;
+	color: white;
+	margin: 0;
+}
+
+.loginmain + footer img {
+	display: none;
+}
+
+aside article {
+	min-width: 100%;
+	padding-bottom: 2.5em;
+}
+
+aside article:first-of-type {
+	margin-top: -1.2em;
+}
+
+.registreer {
+	max-width: 25em;
+	margin: auto;
+	padding: 1em;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 0.5em;
+}
+
+.registreer fieldset {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 1em;
+	border: none;
+	transition: all .2s;
+	padding: 1em;
+	max-width: 30em;
+}
+
+.registreer fieldset .feedback {
+	display: block;
+	color: White;
+	background: SeaGreen;
+	padding: .25em;
+}
+
+.registreer fieldset:invalid .feedback {
+	display: none;
+}
+
+.registreer legend {
+	font-weight: bold;
+}
+
+.registreer input {
+	border-color: #000;
+	padding: .25em;
+	font-size: 1em;
+	margin-bottom: 1em;
+	width: 100%;
+	transition: all .2s;
+	z-index: 2;
+}
+
+.registreer input:valid {
+	border-color: green;
+}
+
+.registreer input:invalid {
+	border-color: MediumVioletRed;
+}
+
+.registreer input:focus {
+	transform: scale(1.01, 1.01);
+}
+
+.registreer input:focus + .tooltip {
+	display: block;
+	opacity: 1;
+	margin-top: -1.3em;
+}
+
+.registreer button {
+	font-size: 1.25em;
+	flex: 0 0 2em;
+	transition: all .2s;
+}
+
+button:hover {
+	animation: jiggle .3s ease-out;
+}
+
+@keyframes jiggle {
+	15%,
+	40%,
+	75%,
+	100% {
+		transform-origin: center center
+	}
+	15% {
+		transform: scale(1.4, 1.2);
+	}
+	40% {
+		transform: scale(0.9, 0.9);
+	}
+	75% {
+		transform: scale(1.08, 1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+
+}
+.registreer button:focus {
+	transform: scale(1.1, 1.1);
+}
+.registreer .tooltip {
+	z-index: 1;
+	color: DodgerBlue;
+	padding: .25em;
+	background: AliceBlue;
+	border: 1px solid currentColor;
+	font-style: italic;
+	transition: all .2s;
+	margin-top: -3em;
+	opacity: 0;
+}
+.detailmain {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 95%;
+}
+fieldset {
+	border: none;
+}
+.switch {
+	background-color: white;
+	color: #102b42;
+	border-radius: 0.3em;
+	margin-top: 0.5em;
+	padding: 0.5em;
+}
+.switch h4 {
+	display: inline;
+}
+.switch p {
+	margin: 0;
+}
+.switch button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease;
+	font-size: 2em;
+	border: none;
+}
+.articledark {
+	background-color: #102b42;
+	color: white;
+}
+.read {
+	animation: pulse2 1s forwards;
+}
+@keyframes pulse2 {
+	0% {
+		background-color: rgba(108, 182, 69, 0.85);
+	}
+	
+	100% {
+		background-color: rgba(255, 0, 0, 0.50);
+	}
+}
+
+/* Mediaqueries */
+@media screen and (min-width: 55em) {
+	.login {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 75em) {
+	legend {
+		display: inline;
+	}
+}
+@media screen and (min-width: 45em) {
+	article {
+		max-width: 100%;
+	}
+}
+@media screen and (min-width: 65em) {
+	article {
+		max-width: 100%;
+	}
+}
+@media screen and (min-width: 60em) {
+	article {
+		max-width: 47%;
+	}
+	
+	.detail {
+		min-width: 40em;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.uitgelicht {
+		min-width: 30%;
+	}
+}
+@media screen and (max-width: 45em) {
+	input[type="search" i] {
+		-webkit-appearance: searchfield;
+		width: 20em;
+		margin: 1em;
+	}
+	
+	article {
+		min-width: 100%;
+	}
+	
+	.sorteer form {
+		margin-left: 0;
+	}
+	
+	.visual {
+		display: block;
+	}
+	
+	.uitgelicht {
+		width: 100%;
+	}
+	
+	aside article:first-of-type {
+		margin-top: 1em;
+		;
+	}
+	
+	.uitgelicht a {
+		display: block;
+		-webkit-clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
+		clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
+		max-width: 20em;
+	}
+	
+	.uitgelicht h3 {
+		display: block;
+	}
+	
+	.uitgelicht h4 {
+		display: inline;
+		background-color: transparent;
+		margin-top: 1em;
+	}
+	
+	h2 {
+		display: block;
+	}
+	
+	.login {}
+	
+	.overlay {
+		padding-top: 0;
+		text-align: center;
+	}
+	
+	.asidehead .overlay {
+		background-color: rgba(240, 133, 36, 1.00);
+	}
+}
+@media screen and (min-width: 32.5em) {
+	.verhalen {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	article {
+		margin-right: 1em;
+	}
+	
+	.overlay {
+		padding-top: 0;
+		text-align: center;
+	}
+}
+
+}

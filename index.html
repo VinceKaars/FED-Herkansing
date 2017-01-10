@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>DFDS 99 Reisverhalen</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="http://www.dfdsseaways.nl/_layouts/15/images/DFDS/favicon_DFDS.ico" />
+	<link rel="apple-touch-icon" href="http://www.dfdsseaways.nl/_layouts/15/images/DFDS/apple-touch-icon.png" />
+	<link rel="stylesheet" href="font-awesome.min.css">
+	<script src="https://use.fontawesome.com/65ac1d61ca.js"></script>
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src='images/dfdslogo.jpg' alt='logo dfds'>
+			<h1>DFDS</h1></a>
+	</header>
+	<nav class=menu>
+		<ul>
+			<li><a href="login.html">Inloggen</a></li>
+			<li><a href="registreer.html">Registreer</a></li>
+		</ul>
+	</nav>
+	<div class="accordion horizontal">
+		<ul>
+			<li><a href="#">Zoeken</a>
+				<ul>
+					<form class="zoeken" method="get" action="overzicht.html">
+						<label>
+							<input type="search" placeholder="Zoek op titel, auteur, etc…" name="q">
+						</label>
+						<input type="submit" value="Go" class=searchbutton/>
+
+					</form>
+				</ul>
+			</li>
+			<li><a href="#">Filter</a>
+				<ul>
+					<nav class=filter>
+						<form class="filter" method="get">
+							<fieldset>
+								<legend>Filter op Thema:</legend>
+								<label>
+									<input type="checkbox" name="Romantiek" value="Romantiek" />Romantiek</label>
+								<label>
+									<input type="checkbox" name="Horror" value="Horror" />Horror</label>
+								<label>
+									<input type="checkbox" name="Avontuur" value="Avontuur" />Gore</label>
+							</fieldset>
+							<fieldset>
+								<legend>Filter op Auteur:</legend>
+								<label>
+									<input type="checkbox" name="Molovich" value="Molovich" />Molovich</label>
+								<label>
+									<input type="checkbox" name="Luijten" value="Luijten" />Hugo Luijten</label>
+								<label>
+									<input type="checkbox" name="all" value="all" />Elk</label>
+							</fieldset>
+							<fieldset>
+								<legend>Aantal woorden:</legend>
+								<input type="range" name="worden" min="0" max="1000">
+								<input type="submit">
+							</fieldset>
+						</form>
+					</nav>
+				</ul>
+			</li>
+			<li><a href="#">Sorteer</a>
+				<ul>
+					<form action="#" method="post" class="form_sort"> <span class="manage_title">Sorteer op:</span>
+
+						<select class="select_styled white_select" name="sort_list" id="sort_list">
+							<option value="1" data-sort="datumnieuw">Datum Aflopend
+								<option value="2" selected="" data-sort="price">Waardering Hoog - Laag
+									<option value="3" data-sort="loc">Niveau
+						</select>
+					</form>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<main>
+		<div class=visual>
+			<section class=verhalen>
+				<article>
+					<div class=afbeelding6>
+						<div class=overlay>
+							<h3>Stijloefeningen (69) – Lange Frans	</h3>
+
+						</div>
+					</div>
+					<p>Uh, uh, dit is Lange Frans, uh, uh Daar gaan we dan… Drop die beat. (De beat wordt gedropt, Lange Frans gaat er vol in:) Het is dinsdagochtend, zoveel februari Ik stap uit de bus, zonder veel bombarie Voor me slaapt mijn zoon, in z’n kinderwagen Voor hem zing ik dit lied, zonder koek van Larie […]"</p>
+					<a href="verhaal1.html"> Lees Verder.</a>
+					<footer>
+						<p>Door: Molovich,
+							<time>10 Mei, 2011</time>
+						</p>
+					</footer>
+					<p>
+						<button class=buttonn2>
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</button> Gelezen?</p>
+				</article>
+				<article>
+					<div class=afbeelding3>
+						<div class=overlay>
+							<h3>Stijloefeningen (43) – Heroïsch vers</h3></div>
+					</div>
+					<p>De bus stopt voor Centraal, z’n zoon slaapt in z’n armen De regen plenst hem nat, de wind jankt langs zijn oor Een drilboor drilt, een heipaal heit, een bouwput zucht Hij zoekt naar wat hij reeds een week of wat niet vindt Excercises de style, van Raymond Queneau Maar dan in ‘t Nederlands, vertaald door Rudy K. En al zijn hoop ligt in de Openbare bieb</p>
+					<a href="verhaal3.html"> Lees Verder.</a>
+					<footer>
+						<p>Door: Molovich,
+							<time>1 April, 2011</time>
+						</p>
+					</footer>
+					<p>
+						<button class=buttonn3>
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</button> Gelezen?</p>
+				</article>
+				<article>
+					<div class=afbeelding2>
+						<div class=overlay>
+							<h3>Stijloefeningen (58) – De Passie van Max</h3></div>
+					</div>
+					<p>Ik klamp me vast aan het wagentje van mijn zoon. Hij slaapt. De busrit heb ik overleefd. Het is rond het middaguur, de mensen lopen langs ons heen, zonder ons op te merken. Niemand steekt een hand uit. Ik sleep me voort. De pijn zo goed als mogelijk negerend. De wind maakt een zweep van de regen. Bij elke stap voel ik de slagen. In mijn gezicht, op mijn handen. Ja zelfs op mijn rug, dwars door mijn jas heen.</p>
+					<a href="verhaal2.html"> Lees Verder.</a>
+					<footer>
+						<p>Door: Molovich,
+							<time>22 April, 2011</time>
+						</p>
+					</footer>
+					<p>
+						<button class=buttonn4>
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</button> Gelezen?
+					</p>
+				</article>
+				<article>
+					<div class=afbeelding4>
+						<div class=overlay>
+							<h3>Stijloefeningen (99) – Verrassing</h3></div>
+					</div>
+					<p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je lopen?’ – ‘Ja, ik was met mijn zoon. Die sliep in zijn kinderwagen.’"</p>
+					<a href="#"> Lees Verder.</a>
+					<footer>
+						<p>Door: Molovich,
+							<time>12 Juli, 2011</time>
+						</p>
+					</footer>
+					<p>
+						<button class=buttonn5>
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</button> Gelezen?</p>
+				</article>
+				<article>
+					<div class=afbeelding5>
+						<div class=overlay>
+							<h3>Stijloefeningen (96) – Steenkolenfrans</h3></div>
+					</div>
+					<p>"Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur Exercices de Style de Raymond Queneau. C’est un livre très dificile d’acquérir. Mais zut alors, quelle ravage ici! Il y a beaucoup de puits de travaille! Les politis enfonsent, les foret forent."</p>
+					<a href="#"> Lees Verder.</a>
+					<footer>
+						<p>Door: Molovich,
+							<time>4 Juli, 2011</time>
+						</p>
+					</footer>
+					<p>
+						<button class=buttonn6>
+							<i class="fa fa-check" aria-hidden="true"></i> </button> Gelezen?
+					</p>
+				</article>
+			</section>
+			<aside class=uitgelicht>
+				<div class=asidehead>
+					<div class=overlay>
+						<h3>Uitgelichte Verhalen:</h3></div>
+				</div>
+				<article>
+					<h4>Stijloefeningen (69) – Lange Frans</h4>
+					<p>"Uh, uh, dit is Lange Frans, uh, uh Daar gaan we dan… Drop die beat. (De beat wordt gedropt, Lange Frans gaat er vol in:) Het is dinsdagochtend, zoveel februari Ik stap uit de bus, zonder veel bombarie"</p>
+					<a href="verhaal1.html"> Lees Verder.</a>
+				</article>
+				<article>
+					<h4>Stijloefeningen (58) – De Passie van Max</h4>
+					<p>Ik klamp me vast aan het wagentje van mijn zoon. Hij slaapt. De busrit heb ik overleefd. Het is rond het middaguur, de mensen lopen langs ons heen, zonder ons op te merken. Niemand steekt een hand uit. Ik sleep me voort.</p>
+					<a href="verhaal2.html"> Lees Verder.</a>
+				</article>
+				<article>
+					<h4>Stijloefeningen (43) – Heroïsch vers</h4>
+					<p>De bus stopt voor Centraal, z’n zoon slaapt in z’n armen De regen plenst hem nat, de wind jankt langs zijn oor Een drilboor drilt, een heipaal heit, een bouwput zucht</p>
+					<a href="verhaal3.html"> Lees Verder.</a>
+				</article>
+
+				<section class=switch>
+					<h4>Modus:</h4>
+					<p>Klik om de nachtmodus te (de)activeren.</p>
+					<button>
+						<i class="fa fa-power-off" aria-hidden="true"></i>
+					</button>
+				</section>
+			</aside>
+		</div>
+	</main>
+	<footer>
+
+		<p>Volg Ons
+			<a href="https://www.facebook.com/dfdsnederland/">Facebook</a>
+			<a href="http://www.twitter.com/user/dfdsnederland">Twitter</a>
+			<a href="http://www.google.com">Google+</a>
+		</p>
+		<img src="images/boot.png" alt='logo boot'>
+	</footer>
+	<script src="script.js"></script>
+
+</body>
+
+</html>

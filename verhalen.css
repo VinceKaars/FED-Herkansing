@@ -1,0 +1,116 @@
+/* Verhaal 1 */
+
+@media screen and (max-width: 40em) {
+	.fransmobiel {
+		max-width: 100%;
+	}
+	.franstablet {
+		display: none;
+	}
+	.fransdesktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 40em) and (max-width: 60em) {
+	.fransmobiel {
+		display: none;
+	}
+	.franstablet {
+		max-width: 100%;
+	}
+	.fransdesktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	.fransmobiel {
+		display: none;
+	}
+	.franstablet {
+		display: none;
+	}
+	.fransdesktop {
+		max-width: 100%;
+	}
+}
+
+
+/* Verhaal 2 */
+
+@media screen and (max-width: 40em) {
+	.maxmobiel {
+		max-width: 100%;
+	}
+	.maxtablet {
+		display: none;
+	}
+	.maxdesktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 40em) and (max-width: 60em) {
+	.maxmobiel {
+		display: none;
+	}
+	.maxtablet {
+		max-width: 100%;
+	}
+	.maxdesktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	.maxmobiel {
+		display: none;
+	}
+	.maxtablet {
+		display: none;
+	}
+	.maxdesktop {
+		max-width: 100%;
+	}
+}
+
+
+/* Verhaal 3 */
+
+@media screen and (max-width: 36em) {
+	.heroischmobiel {
+		max-width: 100%;
+		min-width: 100%:
+	}
+	.heroischtablet {
+		display: none;
+	}
+	.heroischdesktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 36em) and (max-width: 60em) {
+	.heroischmobiel {
+		display: none;
+	}
+	.heroischtablet {
+		max-width: 100%;
+	}
+	.heroischdesktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	.heroischmobiel {
+		display: none;
+	}
+	.heroischtablet {
+		display: none;
+	}
+	.heroischdesktop {
+		max-width: 100%;
+	}
+}
